@@ -1,0 +1,38 @@
+﻿<Window x:Class="ControlDemos.RadioButton"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ControlDemos" Height="583.025316455696" Width="465"
+    >
+    <Grid>
+      <!-- ==
+      <StackPanel Margin="30,30,30,30">
+        <RadioButton GroupName="Jerseys">Blue Jerseys</RadioButton>
+        <RadioButton GroupName="Jerseys">White Jerseys</RadioButton>
+        <RadioButton GroupName="Shorts">Red Shorts</RadioButton>
+        <RadioButton GroupName="Shorts">White Shorts</RadioButton>
+        
+      </StackPanel>-->
+
+      <StackPanel>
+        <RadioButton Click="HandleSelection" Name="r1">
+          <StackPanel Orientation="Horizontal">
+            <Image Source="fishtn.jpg" ></Image>
+            <TextBlock FontSize="24" Height="35" Width="133.193333333333">Tropical Fish</TextBlock>
+          </StackPanel>
+        </RadioButton>
+        <RadioButton Click="HandleSelection" Name="r2">
+          <StackPanel Orientation="Horizontal">
+            <Image Source="archtn.jpg" ></Image>
+            <TextBlock FontSize="24" Height="35" Width="133.193333333333">Pretty Arch</TextBlock>
+          </StackPanel>
+        </RadioButton>
+        <RadioButton Click="HandleSelection" Name="r3">
+          <StackPanel Orientation="Horizontal">
+            <Image Source="lilytn.jpg" Height="192.5" Width="256"></Image>
+            <TextBlock FontSize="24" Height="35" Width="133.193333333333">Water Lilies</TextBlock>
+          </StackPanel>
+        </RadioButton>
+      </StackPanel>
+  <Menu VerticalAlignment="Stretch" HorizontalAlignment="Right" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Margin="0,275.012658227848,0,275.012658227848" Width="0" Height="NaN" Name="menu1" />
+</Grid>
+</Window>

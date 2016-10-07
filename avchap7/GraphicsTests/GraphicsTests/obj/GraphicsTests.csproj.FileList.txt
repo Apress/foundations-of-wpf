@@ -1,0 +1,17 @@
+.\bin\Debug\GraphicsTests.exe
+.\bin\Debug\GraphicsTests.pdb
+obj\Debug\ResolveAssemblyReference.cache
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\path.baml
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\polygon.baml
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\Window1.baml
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\path.g.cs
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\polygon.g.cs
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\Window1.g.cs
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\MyApp.g.cs
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\GraphicsTests_Content.g.cs
+c:\avchap7\GraphicsTests\GraphicsTests\obj\Debug\GraphicsTests_MarkupCompile.cache
+obj\Debug\GraphicsTests.g.resources
+obj\Debug\GraphicsTests.Properties.Resources.resources
+obj\Debug\GraphicsTests.csproj.GenerateResource.Cache
+obj\Debug\GraphicsTests.exe
+obj\Debug\GraphicsTests.pdb

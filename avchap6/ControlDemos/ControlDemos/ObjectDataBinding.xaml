@@ -1,0 +1,23 @@
+﻿<Window x:Class="ControlDemos.ObjectDataBinding"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:ent="clr-namespace:ControlDemos"
+    Title="ControlDemos" Height="300" Width="300">
+  <Window.Resources>
+    <ObjectDataProvider x:Key="Entries" ObjectType="{x:Type ent:Entries}"  />
+
+    <DataTemplate DataType="{x:Type ent:Entry}">
+      <StackPanel Orientation="Vertical">
+        <TextBlock Foreground="Red" Text="{Binding Name}" FontSize="14" />
+        
+        <TextBlock Foreground="Blue" Margin="8,8,8,8" Text="{Binding EmailAddress}" FontSize="12"/>
+      </StackPanel>
+    </DataTemplate>
+
+  </Window.Resources>
+
+
+  <Grid>
+    <ListBox ItemsSource="{Binding Source={StaticResource Entries}}" />
+  </Grid>
+</Window>

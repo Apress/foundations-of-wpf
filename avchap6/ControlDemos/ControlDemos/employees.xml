@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<employees>
+  <employee id="1">
+    <Name>John Smit</Name>
+    <Title>CEO</Title>
+    <Salary>200000</Salary>
+  </employee>
+  <employee id="2">
+    <Name>Dave Seo</Name>
+    <Title>CTO</Title>
+    <Salary>150000</Salary>
+  </employee>
+  <employee id="3">
+    <Name>Bob Ajob</Name>
+    <Title>CFO</Title>
+    <Salary>120000</Salary>
+  </employee>
+</employees>

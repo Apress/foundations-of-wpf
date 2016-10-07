@@ -1,0 +1,26 @@
+﻿<Window x:Class="GraphicsTests.polygon"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GraphicsTests" Height="320" Width="234"
+    >
+    <Grid>
+      <Polygon Fill="Black">
+        <Polygon.LayoutTransform>
+          <TransformGroup>
+            <RotateTransform Angle="90"></RotateTransform>
+            <SkewTransform AngleX="20"></SkewTransform>
+          </TransformGroup>
+
+        </Polygon.LayoutTransform>
+        <Polygon.Points>
+          <Point X="100" Y="100" />
+          <Point X="100" Y="110" />
+          <Point X="130" Y="125" />
+          <Point X="200" Y="120" />
+        </Polygon.Points>
+        
+      </Polygon>
+
+    </Grid>
+  </Window>
+  

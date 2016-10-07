@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<Catalog>
+	<Products>
+		<Product>
+		    <PCode>BK-R93R-48</PCode>
+			<Name>Road-150 Red, 48</Name>
+			<Image>c:\bikecatalog\1.GIF</Image>
+			<Description>Road-150 Red, Size 48</Description>
+			<Rating>***</Rating>
+			<Price>$3578.27</Price>
+		</Product>
+		<Product>
+		    <PCode>BK-R68R-58</PCode>
+			<Name>Road-450 Red, 58</Name>
+			<Image>c:\bikecatalog\2.gif</Image>
+			<Description>Road-450 Red, 58 Size 58</Description>
+			<Rating>****</Rating>
+			<Price>$1457.99</Price>
+		</Product>
+		<Product>
+		    <PCode>BK-R50B-58</PCode>
+			<Name>Road-650 Black, 58</Name>
+			<Image>c:\bikecatalog\3.gif</Image>
+			<Description>Road-650 Black, 58, Size: 58</Description>
+			<Rating>**</Rating>
+			<Price>$782.99</Price>
+		</Product>
+		<Product>
+		    <PCode>BK-M82S-38</PCode>
+			<Name>Mountain-100 Silver, 38</Name>
+			<Image>c:\bikecatalog\4.gif</Image>
+			<Description>Mountain 100 Silver, Size 38  </Description>
+			<Rating>*****</Rating>
+			<Price>$3399.99</Price>
+		</Product>
+	</Products>
+	
+</Catalog>

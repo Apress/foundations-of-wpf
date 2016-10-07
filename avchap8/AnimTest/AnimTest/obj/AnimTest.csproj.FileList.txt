@@ -1,0 +1,12 @@
+.\bin\Debug\AnimTest.exe
+.\bin\Debug\AnimTest.pdb
+obj\Debug\ResolveAssemblyReference.cache
+C:\avchap8\AnimTest\AnimTest\obj\Debug\Window1.baml
+C:\avchap8\AnimTest\AnimTest\obj\Debug\Window1.g.cs
+C:\avchap8\AnimTest\AnimTest\obj\Debug\MyApp.g.cs
+C:\avchap8\AnimTest\AnimTest\obj\Debug\AnimTest_MarkupCompile.cache
+obj\Debug\AnimTest.g.resources
+obj\Debug\AnimTest.Properties.Resources.resources
+obj\Debug\AnimTest.csproj.GenerateResource.Cache
+obj\Debug\AnimTest.exe
+obj\Debug\AnimTest.pdb

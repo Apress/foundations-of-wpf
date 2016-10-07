@@ -1,0 +1,34 @@
+﻿<Window x:Class="AnimTest.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="AnimTest" Height="400" Width="400" >
+    <Grid>
+      <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+        <ContentControl Content="" FontSize="24" Name="Cont">
+         <ContentControl.Triggers>
+           <EventTrigger RoutedEvent="Window.Loaded" >
+             <EventTrigger.Actions>
+               <BeginStoryboard>
+                 <Storyboard>
+                   <StringAnimationUsingKeyFrames RepeatBehavior="Forever" 
+                            Storyboard.TargetName="Cont" 
+                            Storyboard.TargetProperty="Content" 
+                            Duration="0:0:10">
+                     <DiscreteStringKeyFrame KeyTime="0:0:1" Value="Let's Go" />
+                     <DiscreteStringKeyFrame KeyTime="0:0:3" Value="MAR" />
+                     <DiscreteStringKeyFrame KeyTime="0:0:4" Value="MAR IN" />
+                     <DiscreteStringKeyFrame KeyTime="0:0:5" Value="MAR IN ERS" />
+                     <DiscreteStringKeyFrame KeyTime="0:0:8" Value="Let's GO!" />
+                   </StringAnimationUsingKeyFrames>
+                 </Storyboard>
+               </BeginStoryboard>
+             </EventTrigger.Actions>
+           </EventTrigger> 
+         </ContentControl.Triggers>
+        </ContentControl>
+      </StackPanel>
+
+
+
+    </Grid>
+</Window>

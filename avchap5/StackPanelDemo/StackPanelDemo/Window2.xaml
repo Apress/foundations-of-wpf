@@ -1,0 +1,22 @@
+﻿<Window x:Class="StackPanelDemo.Window2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="TabPanelDemo" Height="300" Width="300">
+    <Grid>
+    <TabPanel VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Margin="0,29,0,0" Width="243" Height="195" Name="tabPanel1">
+      <TabControl VerticalAlignment="Top" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Name="tabControl1">
+        <TabItem Name="tabItem1" Header="Item1">
+          <StackPanel>
+            <Button>Button1</Button>
+            <Button>Button2</Button>
+            <Label>Label1</Label>
+          </StackPanel>
+        </TabItem>
+        <TabItem Name="tabItem2" Header="Item2">Item 2</TabItem>
+        <TabItem Name="tabItem3" Header="Item3">Item 3</TabItem>
+        <TabItem Name="tabItem4" Header="Item4">Item 4</TabItem>
+      </TabControl>
+    </TabPanel>
+
+  </Grid>
+</Window>

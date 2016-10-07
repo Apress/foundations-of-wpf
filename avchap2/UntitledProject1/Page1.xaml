@@ -1,0 +1,29 @@
+<Page
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/interactivedesigner/2006"
+	mc:Ignorable="d"
+	x:Name="RootPage"
+	x:Class="UntitledProject1.Page1" 
+	WindowTitle="Root Page">
+
+	<Page.Resources>
+		<Storyboard x:Key="OnLoaded"/>
+	</Page.Resources>
+
+	<Page.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard x:Name="OnLoaded_BeginStoryboard" Storyboard="{DynamicResource OnLoaded}"/>
+		</EventTrigger>
+	</Page.Triggers>
+
+	<Grid Background="#FFFFFFFF" x:Name="DocumentRoot" Width="640" Height="480">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+	</Grid>
+</Page>

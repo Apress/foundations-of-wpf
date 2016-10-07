@@ -1,0 +1,196 @@
+<Grid 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/interactivedesigner/2006"
+	mc:Ignorable="d" 
+	x:Name="DocumentRoot"
+	x:Class="BikeBrowser.Scene1" 
+	Width="579.68" Height="480">
+
+	<Grid.Resources>
+		<Storyboard x:Key="OnLoaded"/>
+		<DataTemplate x:Key="CatalogTemplate">
+			<StackPanel x:Name="StackPanel1">
+				<StackPanel x:Name="StackPanel2">
+					<StackPanel x:Name="StackPanel">
+						<TextBlock x:Name="TextBlock" Text="{Binding Mode=OneWay, XPath=Products/Product/Name}"/>
+					</StackPanel>
+				</StackPanel>
+			</StackPanel>
+		</DataTemplate>
+		<XmlDataProvider x:Key="BikeSource" d:IsDataSource="True" Source="C:\bikecatalog\bikecatalog.xml"/>
+		<DataTemplate x:Key="CatalogTemplate1">
+			<StackPanel x:Name="StackPanel1">
+				<StackPanel x:Name="StackPanel">
+					<ItemsControl x:Name="ItemsControl" ItemsSource="{Binding Mode=OneWay, XPath=Products/Product}">
+						<ItemsControl.ItemTemplate>
+							<DataTemplate>
+								<StackPanel x:Name="StackPanel">
+									<TextBlock x:Name="TextBlock" Text="{Binding Mode=OneWay, XPath=Name}"/>
+								</StackPanel>
+							</DataTemplate>
+						</ItemsControl.ItemTemplate>
+					</ItemsControl>
+				</StackPanel>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ProductTemplate">
+			<StackPanel x:Name="StackPanel">
+				<TextBlock x:Name="TextBlock" Text="{Binding Mode=OneWay, XPath=Name}"/>
+			</StackPanel>
+		</DataTemplate>
+		<DataTemplate x:Key="ProductTemplate1">
+			<StackPanel x:Name="StackPanel">
+				<TextBlock x:Name="TextBlock" Text="{Binding Mode=OneWay, XPath=Name}"/>
+			</StackPanel>
+		</DataTemplate>
+		<ControlTemplate x:Key="ListTemplate" TargetType="{x:Type ContentControl}">
+			<Grid x:Name="Grid" RenderTransformOrigin="0.5,0.5">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<Rectangle Stroke="{x:Null}" RadiusX="18.7776353175993" RadiusY="18.7776353175993" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="2.55527063519848,2.08617090524538,-1.3375943461854,-1.16802827284738" Width="Auto" Height="Auto" x:Name="Rectangle" RenderTransformOrigin="0.5,0.5">
+					<Rectangle.Fill>
+						<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+							<LinearGradientBrush.RelativeTransform>
+								<TransformGroup>
+									<TranslateTransform X="-0.5" Y="-0.5"/>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="631.401376641438"/>
+									<TranslateTransform X="0.5" Y="0.5"/>
+									<TranslateTransform X="-1.1102230246251565E-16" Y="-1.1102230246251565E-16"/>
+								</TransformGroup>
+							</LinearGradientBrush.RelativeTransform>
+							<LinearGradientBrush.GradientStops>
+								<GradientStopCollection>
+									<GradientStop Color="sc#1, 0.954263, 0.30914855, 0.35360992" Offset="0"/>
+									<GradientStop Color="sc#1, 0.04024682, 0.06393177, 0.284197628" Offset="0.49145299145299121"/>
+								</GradientStopCollection>
+							</LinearGradientBrush.GradientStops>
+						</LinearGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<Rectangle d:LayoutOverrides="None" Stroke="{x:Null}" RadiusX="18.7776353175993" RadiusY="18.7776353175993" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="2.55527063519873,1.31506549254158,-0.566488933483129,0" Width="Auto" Height="128.774603921563" x:Name="Rectangle1" RenderTransformOrigin="0.5,0.5">
+					<Rectangle.Fill>
+						<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+							<LinearGradientBrush.RelativeTransform>
+								<TransformGroup>
+									<TranslateTransform X="-0.5" Y="-0.5"/>
+									<ScaleTransform ScaleX="1" ScaleY="1"/>
+									<SkewTransform AngleX="0" AngleY="0"/>
+									<RotateTransform Angle="270.50646021872143"/>
+									<TranslateTransform X="0.5" Y="0.5"/>
+									<TranslateTransform X="0" Y="0"/>
+								</TransformGroup>
+							</LinearGradientBrush.RelativeTransform>
+							<LinearGradientBrush.GradientStops>
+								<GradientStopCollection>
+									<GradientStop Color="sc#0, 1, 1, 1" Offset="0.40170940170940145"/>
+									<GradientStop Color="sc#1, 1, 1, 1" Offset="0.863247863247863"/>
+								</GradientStopCollection>
+							</LinearGradientBrush.GradientStops>
+						</LinearGradientBrush>
+					</Rectangle.Fill>
+				</Rectangle>
+				<ContentPresenter VerticalAlignment="Stretch" Margin="2.07136184102533,26.1279146178311,1.17593257642784,16.6005128566424" Height="Auto" x:Name="ContentPresenter" RenderTransformOrigin="0.5,0.5" Content="{TemplateBinding Content}" ContentTemplate="{TemplateBinding ContentTemplate}" ContentTemplateSelector="{TemplateBinding ContentTemplateSelector}"/>
+			</Grid>
+		</ControlTemplate>
+	</Grid.Resources>
+
+	<Grid.Triggers>
+		<EventTrigger RoutedEvent="FrameworkElement.Loaded">
+			<BeginStoryboard x:Name="OnLoaded_BeginStoryboard" Storyboard="{DynamicResource OnLoaded}"/>
+		</EventTrigger>
+	</Grid.Triggers>
+	
+	<Grid.ColumnDefinitions>
+		<ColumnDefinition/>
+	</Grid.ColumnDefinitions>
+	<Grid.RowDefinitions>
+		<RowDefinition/>
+	</Grid.RowDefinitions>
+	<Grid.Background>
+		<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+			<LinearGradientBrush.RelativeTransform>
+				<TransformGroup>
+					<TranslateTransform X="-0.5" Y="-0.5"/>
+					<ScaleTransform ScaleX="1" ScaleY="1"/>
+					<SkewTransform AngleX="0" AngleY="0"/>
+					<RotateTransform Angle="78.483689233447421"/>
+					<TranslateTransform X="0.5" Y="0.5"/>
+					<TranslateTransform X="0" Y="0"/>
+				</TransformGroup>
+			</LinearGradientBrush.RelativeTransform>
+			<LinearGradientBrush.GradientStops>
+				<GradientStopCollection>
+					<GradientStop Color="sc#1, 0.0537335165, 0.413330764, 0.9373776" Offset="0"/>
+					<GradientStop Color="sc#1, 0.8969137, 0.0566387065, 0.0566387065" Offset="1"/>
+					<GradientStop Color="sc#1, 0.9840131, 0.9460652, 0.9460652" Offset="0.63247863247863223"/>
+				</GradientStopCollection>
+			</LinearGradientBrush.GradientStops>
+		</LinearGradientBrush>
+	</Grid.Background>
+	<Grid Margin="36,6.62313396736548,41,166.182837337067" x:Name="ProductGrid" RenderTransformOrigin="0.5,0.5" DataContext="{Binding Mode=OneWay, Source={StaticResource BikeSource}, XPath=/Catalog/Products/Product}">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="0.321492007104796*"/>
+			<ColumnDefinition Width="0.678507992895204*"/>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition/>
+		</Grid.RowDefinitions>
+		<ContentControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="Master" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ListTemplate}">
+			<ListBox x:Name="ProductList" RenderTransformOrigin="0.5,0.5" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding Mode=OneWay}" ItemTemplate="{DynamicResource ProductTemplate1}" SelectedIndex="-1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FFFFFFFF"/>
+		</ContentControl>
+		<ContentControl HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="20,0,0,0" Width="Auto" Height="Auto" Grid.Column="1" x:Name="Details" RenderTransformOrigin="0.5,0.5" Template="{DynamicResource ListTemplate}">
+			<Grid x:Name="Grid" RenderTransformOrigin="0.5,0.5">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition/>
+				</Grid.RowDefinitions>
+				<TextBlock VerticalAlignment="Bottom" Margin="15.3923978685612,0,82.68,8" Height="39" x:Name="Price" RenderTransformOrigin="0.5,0.5" Text="{Binding Mode=OneWay, XPath=Price}" TextWrapping="Wrap"/>
+				<TextBlock VerticalAlignment="Bottom" Margin="13.3923978685612,0,14.68,53.9999999999998" Height="40.6180054009367" x:Name="Description" RenderTransformOrigin="0.5,0.5" Text="{Binding Mode=OneWay, XPath=Description}" TextWrapping="Wrap" d:LayoutOverrides="VerticalAlignment"/>
+				<Image Margin="10.3923978685612,3.5204047434711,15.68,109.171526781706" x:Name="Pic" Source="{Binding Mode=OneWay, XPath=Image}" RenderTransformOrigin="0.5,0.5" d:LayoutOverrides="VerticalAlignment"/>
+			</Grid>
+		</ContentControl>
+		<GridSplitter HorizontalAlignment="Left" Margin="0.392397868561062,0.333333333333314,0,-0.666666666666686" Width="18.6666666666667" Grid.Column="1" x:Name="GridSplitter" RenderTransformOrigin="0.5,0.5"/>
+	</Grid>
+	<Rectangle Stroke="{x:Null}" Fill="{x:Null}" RadiusX="18.7776353175993" RadiusY="18.7776353175993" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="41.365746699413,0,41.9252929076306,-69.4219689819472" Width="Auto" Height="232.284577619781" x:Name="Reflection" RenderTransformOrigin="0.5,0.5">
+		<Rectangle.RenderTransform>
+			<TransformGroup>
+				<TranslateTransform X="0" Y="0"/>
+				<ScaleTransform ScaleX="1" ScaleY="-1"/>
+				<SkewTransform AngleX="0" AngleY="0"/>
+				<RotateTransform Angle="0"/>
+				<TranslateTransform X="0" Y="0"/>
+				<TranslateTransform X="0" Y="0"/>
+			</TransformGroup>
+		</Rectangle.RenderTransform>
+		<Rectangle.OpacityMask>
+			<LinearGradientBrush StartPoint="0,0.5" EndPoint="1,0.5">
+				<LinearGradientBrush.RelativeTransform>
+					<TransformGroup>
+						<TranslateTransform X="-0.5" Y="-0.5"/>
+						<ScaleTransform ScaleX="1" ScaleY="1"/>
+						<SkewTransform AngleX="0" AngleY="0"/>
+						<RotateTransform Angle="270.50646021872143"/>
+						<TranslateTransform X="0.5" Y="0.5"/>
+						<TranslateTransform X="0" Y="0"/>
+					</TransformGroup>
+				</LinearGradientBrush.RelativeTransform>
+				<LinearGradientBrush.GradientStops>
+					<GradientStopCollection>
+						<GradientStop Color="sc#0.7, 1, 1, 1" Offset="0"/>
+						<GradientStop Color="sc#0, 1, 1, 1" Offset="0.68803418803418825"/>
+					</GradientStopCollection>
+				</LinearGradientBrush.GradientStops>
+			</LinearGradientBrush>
+		</Rectangle.OpacityMask>
+	</Rectangle>
+</Grid>

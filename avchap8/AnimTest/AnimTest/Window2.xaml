@@ -1,0 +1,76 @@
+﻿<Grid 
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:d="http://schemas.microsoft.com/expression/interactivedesigner/2006"
+	mc:Ignorable="d"
+	Background="#FFFFFFFF" 
+	x:Name="DocumentRoot"
+	x:Class="UntitledProject1.Scene1" 
+	Width="640" Height="480">
+
+  <Grid.Resources>
+    <Storyboard x:Key="OnLoaded">
+      <ColorAnimationUsingKeyFrames BeginTime="00:00:00" 
+          Duration="00:00:00.0010000" 
+          Storyboard.TargetProperty="(Shape.Fill).(SolidColorBrush.Color)" 
+          Storyboard.TargetName="Ellipse">
+        <SplineColorKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+          KeySpline="0.5,0.5,0.5,0.5" 
+          Value="#FF000000" 
+          KeyTime="00:00:00"/>
+      </ColorAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" 
+         Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[5].(TranslateTransform.X)" 
+         Storyboard.TargetName="Ellipse">
+        <SplineDoubleKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+          KeySpline="0.5,0.5,0.5,0.5" 
+          Value="0" KeyTime="00:00:00"/>
+        <SplineDoubleKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+           KeySpline="0.5,0.5,0.5,0.5" Value="240" KeyTime="00:00:02"/>
+        <SplineDoubleKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+           KeySpline="0.5,0.5,0.5,0.5" Value="500" KeyTime="00:00:04"/>
+      </DoubleAnimationUsingKeyFrames>
+      <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" 
+           Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[5].(TranslateTransform.Y)" 
+           Storyboard.TargetName="Ellipse">
+        <SplineDoubleKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+           KeySpline="0.5,0.5,0.5,0.5" Value="0" KeyTime="00:00:00"/>
+        <SplineDoubleKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+           KeySpline="0.5,0.5,0.5,0.5" Value="371" KeyTime="00:00:02"/>
+        <SplineDoubleKeyFrame d:KeyEase="Linear;Linear;0.5;0.5;0.5;0.5" 
+           KeySpline="0.5,0.5,0.5,0.5" Value="14" KeyTime="00:00:04"/>
+      </DoubleAnimationUsingKeyFrames>
+    </Storyboard>
+  </Grid.Resources>
+
+  <Grid.Triggers>
+    <EventTrigger RoutedEvent="FrameworkElement.Loaded">
+      <BeginStoryboard x:Name="OnLoaded_BeginStoryboard" 
+         Storyboard="{DynamicResource OnLoaded}"/>
+    </EventTrigger>
+  </Grid.Triggers>
+
+  <Grid.ColumnDefinitions>
+    <ColumnDefinition/>
+  </Grid.ColumnDefinitions>
+  <Grid.RowDefinitions>
+    <RowDefinition/>
+  </Grid.RowDefinitions>
+  <Ellipse Stroke="#FF000000" Fill="#FFFFFFFF" 
+     HorizontalAlignment="Left" VerticalAlignment="Top" 
+     Margin="12,14,0,0" Width="102" 
+     Height="95" x:Name="Ellipse" 
+     RenderTransformOrigin="0.5,0.5">
+    <Ellipse.RenderTransform>
+      <TransformGroup>
+        <TranslateTransform X="0" Y="0"/>
+        <ScaleTransform ScaleX="1" ScaleY="1"/>
+        <SkewTransform AngleX="0" AngleY="0"/>
+        <RotateTransform Angle="0"/>
+        <TranslateTransform X="0" Y="0"/>
+        <TranslateTransform X="0" Y="0"/>
+      </TransformGroup>
+    </Ellipse.RenderTransform>
+  </Ellipse>
+</Grid>

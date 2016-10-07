@@ -1,0 +1,12 @@
+﻿<Window x:Class="StackPanelDemo.Canvas2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StackPanelDemo" Height="300" Width="300"
+    >
+    <Grid>
+    <Canvas MinHeight="50" MinWidth="50" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Margin="7,8,15,21" Width="NaN" Height="NaN" Name="canvas1">
+      <Label Canvas.Left="12.369999999999997" Canvas.Top="8.7233333333333327" Name="label1">Top Left</Label>
+      <Label Canvas.Left="NaN" Canvas.Top="NaN" Name="label2" Canvas.Bottom="20" Canvas.Right="20">Bottom Right</Label>
+    </Canvas>
+  </Grid>
+</Window>

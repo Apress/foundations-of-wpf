@@ -1,0 +1,8 @@
+obj\Debug\ResolveAssemblyReference.cache
+c:\avchap5\StackPanel\StackPanel\obj\Debug\Window1.baml
+c:\avchap5\StackPanel\StackPanel\obj\Debug\Window1.g.cs
+c:\avchap5\StackPanel\StackPanel\obj\Debug\MyApp.g.cs
+c:\avchap5\StackPanel\StackPanel\obj\Debug\StackPanel_MarkupCompile.cache
+obj\Debug\StackPanel.g.resources
+obj\Debug\StackPanel.Properties.Resources.resources
+obj\Debug\StackPanel.csproj.GenerateResource.Cache

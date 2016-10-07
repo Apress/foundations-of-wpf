@@ -1,0 +1,9 @@
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\measureclient.Form1.resources
+obj\Debug\measureclient.Properties.Resources.resources
+obj\Debug\measureclient.csproj.GenerateResource.Cache
+bin\Debug\measureclient.exe.config
+bin\Debug\measureclient.exe
+bin\Debug\measureclient.pdb
+obj\Debug\measureclient.exe
+obj\Debug\measureclient.pdb

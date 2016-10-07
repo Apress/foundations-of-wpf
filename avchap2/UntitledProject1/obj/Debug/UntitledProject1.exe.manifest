@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="UntitledProject1.exe" version="1.0.0.2" publicKeyToken="71d056216100b979" language="en-US" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="UntitledProject1" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="UntitledProject1.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="PresentationFramework" version="3.0.51116.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="UntitledProject1.exe" size="5632">
+      <assemblyIdentity name="UntitledProject1" version="0.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>KIzzCG4U1s9gKBFPIPAyKHPH6kA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="en-US\UntitledProject1.resources.dll" size="4096">
+      <assemblyIdentity name="UntitledProject1.resources" version="0.0.0.0" language="en-US" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>ZdEhSi24zz0JnZPJPM22jVWJ11Q=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=REDMOND\akhella" issuerKeyHash="f5cf01aa5b9eef299983cbcce4a417659ad92b30" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>1hA+Gu9ik65r/5IxLTN1gyhQvwg=</DigestValue></Reference></SignedInfo><SignatureValue>SM6eQ68U8Ii4hsa8OWxEw/KLoOsuZe507pDE+mOI8scrXI0JD3TCbFgnr/kbPLeBsgYh1VqVPXlynI8FLq25sl7UvDlQiW+Ws0DCWIuI1lAzBqIOEE5fvg2FPcQ9SF1kNUwqZueVd9YYnzqRSjVatMxGzByt340RlBWMQ9bszfI=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0kI7lMN/Vz0AZt07kgvrqv1tWHH5WAAshO2hRqVoiVttyfwtC/AbfCELeT0/pp8Tlw0CdPx6ZlrcSlsxhP2WQrD65pAN36wGOskC8XVXyCFHeVlYjmuBMDwOLowZljluiE9qCkDU1C09w7iO6kSvV3AYsmAk6YfrpiihDYBg970=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="08bf50288375332d3192ff6bae9362ef1a3e10d6" Description="" Url=""><as:assemblyIdentity name="UntitledProject1.exe" version="1.0.0.2" publicKeyToken="71d056216100b979" language="en-US" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=REDMOND\akhella</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>9rAkat6roV9V2J818pJ90WyBFUs=</DigestValue></Reference></SignedInfo><SignatureValue>vKiZ0kDE3uKhXRt6uKdobBUvIP0RnyJeB0tTuiehFU1UOsHr2LUwLuJXF+adeX+TULqej31uEud5IiaaBvfApZ8wU3vMiBzjW8cIj2KWhCzdkFDleHgNqN8Lulfm659aTrsOcC2ujfN4ccdy7NFplkrVETOB051H+PO+MTuK9pg=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0kI7lMN/Vz0AZt07kgvrqv1tWHH5WAAshO2hRqVoiVttyfwtC/AbfCELeT0/pp8Tlw0CdPx6ZlrcSlsxhP2WQrD65pAN36wGOskC8XVXyCFHeVlYjmuBMDwOLowZljluiE9qCkDU1C09w7iO6kSvV3AYsmAk6YfrpiihDYBg970=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBzTCCATqgAwIBAgIQ9ZlPxJqrrLBO1tDMYg838TAJBgUrDgMCHQUAMCkxJzAlBgNVBAMeHgBSAEUARABNAE8ATgBEAFwAYQBrAGgAZQBsAGwAYTAeFw0wNTA3MTkyMzA5MzdaFw0wNjA3MjAwNTA5MzdaMCkxJzAlBgNVBAMeHgBSAEUARABNAE8ATgBEAFwAYQBrAGgAZQBsAGwAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA0kI7lMN/Vz0AZt07kgvrqv1tWHH5WAAshO2hRqVoiVttyfwtC/AbfCELeT0/pp8Tlw0CdPx6ZlrcSlsxhP2WQrD65pAN36wGOskC8XVXyCFHeVlYjmuBMDwOLowZljluiE9qCkDU1C09w7iO6kSvV3AYsmAk6YfrpiihDYBg970CAwEAATAJBgUrDgMCHQUAA4GBAGDegXPkqEM2om73HuCJ4+w0sW4k6HjsaDdXOhjhriOtrRVlY3/xY38K8S5DUer7Y1CeekjerGlhagEls1Fg4XRpP1BX7x091K6Kwvelgck245biQEwg0Ko9h6DG2aly7+gHFRxC8W1tWzDLIBr0LTJn1Wpqu4A0WBW2+UT3HFrE</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

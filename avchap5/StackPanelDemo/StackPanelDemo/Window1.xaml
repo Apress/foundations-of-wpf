@@ -1,0 +1,13 @@
+﻿<Window x:Class="StackPanelDemo.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="StackPanelDemo" Height="300" Width="661"
+    >
+    <Grid>
+    <StackPanel MinHeight="50" MinWidth="50" VerticalAlignment="Stretch" HorizontalAlignment="Left" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Margin="70,10,0,93" Width="211" Height="NaN" Name="stackPanel1" FlowDirection="LeftToRight" CanHorizontallyScroll="True" CanVerticallyScroll="True" Grid.IsSharedSizeScope="False">
+      <Button VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Height="23" Name="button1">Button</Button>
+      <Button VerticalAlignment="Top" HorizontalAlignment="Left" Width="75" Height="23" Name="button2">Button</Button>
+      <Button VerticalAlignment="Top" HorizontalAlignment="Left" Width="124" Height="23" Name="button3">Button</Button>
+    </StackPanel>
+  </Grid>
+</Window>

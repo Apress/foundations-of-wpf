@@ -1,0 +1,19 @@
+﻿<Window x:Class="ControlDemos.image"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="ControlDemos" Height="300" Width="300"
+    >
+    <Grid>
+      <Grid.Resources>
+        <BitmapImage x:Key="Master" UriSource="Fishtn.jpg" />
+        <CroppedBitmap x:Key="Cropped" SourceRect="20, 20, 100, 20" Source="{StaticResource Master}" />
+        <FormatConvertedBitmap x:Key="Converted" Source="{StaticResource Master}" DestinationFormat="Gray2" />
+      </Grid.Resources>
+      <Image Height="200" Source="{StaticResource Converted}" /> 
+      <!-- <Image>
+        <Image.Source>
+          <BitmapImage UriSource="Fishtn.JPG" Rotation="Rotate90" />
+        </Image.Source>
+      </Image> -->
+    </Grid>
+</Window>

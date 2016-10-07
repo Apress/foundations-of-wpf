@@ -1,0 +1,12 @@
+bin\Debug\DevxBrowser.exe
+bin\Debug\DevxBrowser.pdb
+bin\Debug\en-US\DevxBrowser.resources.dll
+obj\Debug\ResolveAssemblyReference.cache
+C:\avchap3\obj\Debug\Scene1.baml
+C:\avchap3\obj\Debug\Scene1.g.cs
+C:\avchap3\obj\Debug\Application.g.cs
+C:\avchap3\obj\Debug\DevxBrowser_MarkupCompile.cache
+obj\Debug\DevxBrowser.g.en-US.resources
+obj\Debug\en-US\DevxBrowser.resources.dll
+obj\Debug\DevxBrowser.exe
+obj\Debug\DevxBrowser.pdb

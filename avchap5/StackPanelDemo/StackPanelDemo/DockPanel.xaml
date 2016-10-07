@@ -1,0 +1,16 @@
+﻿<Window x:Class="StackPanelDemo.DockPanel"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="DockPanelDemo" Height="432" Width="569"
+    >
+    <Grid>
+    <DockPanel MinHeight="50" MinWidth="50" LastChildFill="True" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="1" Grid.Row="0" Grid.RowSpan="1" Margin="10,10,22,21" Width="NaN" Height="NaN" Name="dockPanel1">
+      <Button Name="button1" DockPanel.Dock="Top">I am the toolbar</Button>
+      <Button Name="button2" DockPanel.Dock="Bottom">I am the status bar</Button>
+      <Button Name="button3">I am the left toolbox</Button>
+      <Button Name="button4" DockPanel.Dock="Right">I am the right toolbox</Button>
+      <Button Name="button5">Button</Button>
+    </DockPanel>
+    
+  </Grid>
+</Window>

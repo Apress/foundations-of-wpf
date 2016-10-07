@@ -1,0 +1,20 @@
+bin\Debug\UntitledProject1.exe
+bin\Debug\UntitledProject1.pdb
+bin\Debug\en-US\UntitledProject1.resources.dll
+obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Laurence\Local Settings\Application Data\Microsoft\Interactive Designer\Temporary Projects\UntitledProject1\obj\Debug\Scene1.baml
+C:\Documents and Settings\Laurence\Local Settings\Application Data\Microsoft\Interactive Designer\Temporary Projects\UntitledProject1\obj\Debug\Scene1.g.cs
+C:\Documents and Settings\Laurence\Local Settings\Application Data\Microsoft\Interactive Designer\Temporary Projects\UntitledProject1\obj\Debug\Application.g.cs
+C:\Documents and Settings\Laurence\Local Settings\Application Data\Microsoft\Interactive Designer\Temporary Projects\UntitledProject1\obj\Debug\UntitledProject1_MarkupCompile.cache
+obj\Debug\UntitledProject1.g.en-US.resources
+obj\Debug\en-US\UntitledProject1.resources.dll
+obj\Debug\UntitledProject1.exe
+obj\Debug\UntitledProject1.pdb
+C:\avchap2\UntitledProject1\obj\Debug\Scene1.baml
+C:\avchap2\UntitledProject1\obj\Debug\Scene1.g.cs
+C:\avchap2\UntitledProject1\obj\Debug\Application.g.cs
+C:\avchap2\UntitledProject1\obj\Debug\UntitledProject1_MarkupCompile.cache
+bin\Debug\UntitledProject1.exe.manifest
+bin\Debug\UntitledProject1.application
+obj\Debug\UntitledProject1.exe.manifest
+obj\Debug\UntitledProject1.application

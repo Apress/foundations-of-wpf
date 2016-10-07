@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <asmv1:assemblyIdentity name="WinFXXAMLBrowserApplication1.exe" version="1.0.0.0" publicKeyToken="520f72a8dc24e561" language="neutral" processorArchitecture="msil" type="win32" />
+    <application />
+    <entryPoint>
+        <assemblyIdentity name="WinFXXAMLBrowserApplication1" version="1.0.2371.10585" language="neutral" processorArchitecture="msil" />
+        <commandLine file="WinFXXAMLBrowserApplication1.exe" parameters="" />
+        <hostInBrowser xmlns="urn:schemas-microsoft-com:asm.v3" />
+        <hostInBrowser xmlns="urn:schemas-microsoft-com:asm.v3" />
+    </entryPoint>
+    <trustInfo>
+        <security>
+            <applicationRequestMinimum>
+                <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site">
+                    <IPermission class="System.Security.Permissions.FileDialogPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Access="Open" />
+                    <IPermission class="System.Security.Permissions.IsolatedStorageFilePermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Allowed="ApplicationIsolationByUser" UserQuota="512000" />
+                    <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="Execution" />
+                    <IPermission class="System.Security.Permissions.UIPermission, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Window="SafeTopLevelWindows" Clipboard="OwnClipboard" />
+                    <IPermission class="System.Drawing.Printing.PrintingPermission, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" version="1" Level="SafePrinting" />
+                    <IPermission class="System.Security.Permissions.MediaPermission, WindowsBase, Version=3.0.51116.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1" Audio="SafeAudio" Video="SafeVideo" Image="SafeImage" />
+                    <IPermission class="System.Security.Permissions.WebBrowserPermission, WindowsBase, Version=3.0.51116.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" version="1" Level="Safe" />
+                </PermissionSet>
+                <defaultAssemblyRequest permissionSetReference="Custom" />
+            </applicationRequestMinimum>
+        </security>
+    </trustInfo>
+    <dependency>
+        <dependentOS>
+            <osVersionInfo>
+                <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+            </osVersionInfo>
+        </dependentOS>
+    </dependency>
+    <dependency>
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+            <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+        </dependentAssembly>
+    </dependency>
+    <dependency>
+        <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+            <assemblyIdentity name="PresentationFramework" version="3.0.51116.0" publicKeyToken="31BF3856AD364E35" language="neutral" processorArchitecture="msil" />
+        </dependentAssembly>
+    </dependency>
+    <dependency>
+        <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WinFXXAMLBrowserApplication1.exe" size="20480">
+            <assemblyIdentity name="WinFXXAMLBrowserApplication1" version="1.0.2371.10585" language="neutral" processorArchitecture="msil" />
+            <hash>
+                <dsig:Transforms>
+                    <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+                </dsig:Transforms>
+                <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+                <dsig:DigestValue>m3jS4Y80WTpVd1TrAmPIOP+UORM=</dsig:DigestValue>
+            </hash>
+        </dependentAssembly>
+    </dependency>
+    <publisherIdentity name="CN=BOOKDEV\Laurence" issuerKeyHash="e2d3ac2ceda3e01b3f0841f189e94f198e3c14c1" />
+    
+<Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>MpxPLmyTjcuGmjrn1diPaEfB4KA=</DigestValue></Reference></SignedInfo><SignatureValue>OqwmOyYTh00R8OMhqRG3d02mhgXfC9gWvVjJkMn12xOe7tqQjYqWCNE+EEfls9z7Vc1OclqrKtec77A3JBZpAFrtpThNbiwH36jARxLzL9kxRArhNDDTqA49JF4bWDIR6YXkEIww2V0CLYvvKa+1bbp3IAipeW0iiJusE8gU+hE=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>sbRq4Rr3Shvvmwfonm7QtR8MRnEk4GBM8pL5N29yvXj0w9fEZX1yQ9CKzo2O2iRydkVM21UMCStByW4NdIhnkLJU0OP395I+hm0Vf1tHi7YS4lWFFlcNYuyFYXBTDMA75oveHxxIE2lVt3N3OMf59O7Yrc8pj2hpfUWyDYPbkJc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a0e0c147688fd8d5e73a9a86cb8d936c2e4f9c32" Description="" Url=""><as:assemblyIdentity name="WinFXXAMLBrowserApplication1.exe" version="1.0.0.0" publicKeyToken="520f72a8dc24e561" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=BOOKDEV\Laurence</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>3H7Op5lS6ZdpvRvWvod+OseTdC4=</DigestValue></Reference></SignedInfo><SignatureValue>jyQA7rGYlT5p+wd/w48NEDsBFAT0RbjRkDvpvchE1PAqTMKMFt/WD/3b/H+hQKshEGyxpYYG3k6EHQl3Z4tlL1Av8FV1/wCg5+p8CKAYRbDQEdr7jIS2AoXp/4xplKmz0j4gPyQTe61FAksrrLiRhk6AvbjkFlWOAefOPkd6FI0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>sbRq4Rr3Shvvmwfonm7QtR8MRnEk4GBM8pL5N29yvXj0w9fEZX1yQ9CKzo2O2iRydkVM21UMCStByW4NdIhnkLJU0OP395I+hm0Vf1tHi7YS4lWFFlcNYuyFYXBTDMA75oveHxxIE2lVt3N3OMf59O7Yrc8pj2hpfUWyDYPbkJc=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCAT6gAwIBAgIQMy4uzuEYQ5tL1ZG50Gty8zAJBgUrDgMCHQUAMCsxKTAnBgNVBAMeIABCAE8ATwBLAEQARQBWAFwATABhAHUAcgBlAG4AYwBlMB4XDTA2MDYyOTEzNTIwM1oXDTA3MDYyOTE5NTIwM1owKzEpMCcGA1UEAx4gAEIATwBPAEsARABFAFYAXABMAGEAdQByAGUAbgBjAGUwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBALG0auEa90ob75sH6J5u0LUfDEZxJOBgTPKS+Tdvcr149MPXxGV9ckPQis6NjtokcnZFTNtVDAkrQcluDXSIZ5CyVNDj9/eSPoZtFX9bR4u2EuJVhRZXDWLshWFwUwzAO+aL3h8cSBNpVbdzdzjH+fTu2K3PKY9oaX1Fsg2D25CXAgMBAAEwCQYFKw4DAh0FAAOBgQAbKIZr8jeED9cxe7EDIhnVW9/kg1UIGFZc1MNG39e5pWyRf0pvEMWKx8eklzTdXudyzrIMXBLoUHxn3Nw2QTinmZvO5iD5KaWrqTrdifmquhlw0P1mPdPA+Gzvwo+EjDMw8jb1SvanUR40wmEYuSFNXgzojjLduf+nUbZJeKb4OA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

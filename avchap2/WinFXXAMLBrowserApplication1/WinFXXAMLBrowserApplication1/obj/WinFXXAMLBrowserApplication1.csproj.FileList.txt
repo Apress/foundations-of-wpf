@@ -1,0 +1,17 @@
+.\bin\Debug\WinFXXAMLBrowserApplication1.exe.manifest
+.\bin\Debug\WinFXXAMLBrowserApplication1.xbap
+.\bin\Debug\WinFXXAMLBrowserApplication1.exe
+.\bin\Debug\WinFXXAMLBrowserApplication1.pdb
+obj\Debug\ResolveAssemblyReference.cache
+C:\avchap2\WinFXXAMLBrowserApplication1\WinFXXAMLBrowserApplication1\obj\Debug\Page1.baml
+C:\avchap2\WinFXXAMLBrowserApplication1\WinFXXAMLBrowserApplication1\obj\Debug\Page1.g.cs
+C:\avchap2\WinFXXAMLBrowserApplication1\WinFXXAMLBrowserApplication1\obj\Debug\MyApp.g.cs
+C:\avchap2\WinFXXAMLBrowserApplication1\WinFXXAMLBrowserApplication1\obj\Debug\WinFXXAMLBrowserApplication1_MarkupCompile.cache
+obj\Debug\WinFXXAMLBrowserApplication1.g.resources
+obj\Debug\WinFXXAMLBrowserApplication1.Properties.Resources.resources
+obj\Debug\WinFXXAMLBrowserApplication1.csproj.GenerateResource.Cache
+obj\Debug\WinFXXAMLBrowserApplication1.TrustInfo.xml
+obj\Debug\WinFXXAMLBrowserApplication1.exe.manifest
+obj\Debug\WinFXXAMLBrowserApplication1.xbap
+obj\Debug\WinFXXAMLBrowserApplication1.exe
+obj\Debug\WinFXXAMLBrowserApplication1.pdb

@@ -1,0 +1,16 @@
+﻿<Window x:Class="ControlDemos.SimpleBinding"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:cnv="clr-namespace:ControlDemos"
+    Title="ControlDemos" Height="300" Width="300"
+    >
+    <Grid>
+      <Grid.Resources>
+        <cnv:ColorConvert x:Key="ColorConvert"></cnv:ColorConvert>
+      </Grid.Resources>
+      <StackPanel Margin="40,40,40,40">
+        <Slider Name="sldValue" Minimum="0" Maximum="100"></Slider>
+        <TextBlock Foreground="{Binding ElementName=sldValue, Path=Value, Converter={StaticResource ColorConvert}}">My Text</TextBlock>
+      </StackPanel>
+    </Grid>
+</Window>

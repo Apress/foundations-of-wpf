@@ -1,0 +1,29 @@
+﻿<Window x:Class="GraphicsTests.path"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="GraphicsTests" Height="419" Width="388"
+    >
+    <Grid>
+      <Path Stroke="Black" StrokeThickness="1">
+        <Path.Data>
+          <PathGeometry>
+            <PathGeometry.Figures>
+              <PathFigure StartPoint="10,100" IsClosed="True">
+                <PolyLineSegment>
+                  <PolyLineSegment.Points>
+                    <Point X="200" Y="100" />
+                    <Point X="200" Y="200" />
+                  </PolyLineSegment.Points>
+                </PolyLineSegment>
+              </PathFigure>
+            </PathGeometry.Figures>
+          </PathGeometry>
+        </Path.Data>
+      </Path>
+
+
+
+
+    </Grid>
+  </Window>
+  
